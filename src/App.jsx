@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import MD5 from 'crypto-js/md5';
 import './App.css';
 
-const API_PUBLIC_KEY = process.env.REACT_APP_PUBLIC_KEY;
-const API_PRIVATE_KEY = process.env.REACT_APP_PRIVATE_KEY;
+const API_PUBLIC_KEY = import.meta.env.VITE_REACT_APP_PUBLIC_KEY;
+const API_PRIVATE_KEY = import.meta.env.VITE_REACT_APP_PRIVATE_KEY;
 const API_BASE_URL = 'https://gateway.marvel.com/v1/public';
 const COMICS_ENDPOINT = `${API_BASE_URL}/characters`;
 
