@@ -34,7 +34,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Lista de los Primeros 10 Personajes de Marvel</h1>
+      <h1>Lista de Personajes de Marvel</h1>
       <ul className="characters-list">
         {comics.map(character => (
           <li key={character.id} className="character-item">
